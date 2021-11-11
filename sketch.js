@@ -76,17 +76,17 @@ function draw() {
       handleBubbleCollision(blueBubbleGroup);
     }*/
 
-    if(blueBubbleGroup.collide(bulletGroup)){
-      handleBubbleCollision();
-    }
+    //if(blueBubbleGroup.collide(bulletGroup)){
+      //handleBubbleCollision();
+    //}
     
     /*if(blueBubbleGroup.collide()){
       handleBubbleCollision(blueBubbleGroup);
     }*/
     
-    /*if(blueBubbleGroup.collide(bulletGroup)){
+    if(blueBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(blueBubbleGroup);
-    }*/
+    }
 
     if(redBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(redBubbleGroup);
@@ -144,7 +144,7 @@ function handleBubbleCollision(bubbleGroup){
     blast.scale=0.3;
     blast.life=20;
     bulletGroup.destroyEach();
-    //bubbleGroup.destroyEach();
+    bubbleGroup.destroyEach();
 }
 
 function handleGameover(bubbleGroup){
